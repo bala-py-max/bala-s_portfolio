@@ -1,0 +1,79 @@
+                                            /* skill */
+ .thirdrow-1st ,.thirdrow-2nd{
+            padding:0px !important;
+        }
+.title-skill{
+        top:-200px;
+        }
+ .secondrow-2nd{
+            margin-top:-70px;
+        }
+        
+ #skill{
+            padding: 0px 2rem 0px 2rem;
+        }
+.firstrow{
+            margin-top:5rem
+        }
+
+/* for hide */
+     .num1,.num2,.num3,.num4,.num5,.num6{
+        display: none !important;  
+    }
+    #skill{
+       display: none !important;     
+    }
+/* done */
+    #skills{
+        padding: 0px 3rem 0px 3rem;
+    }
+
+.skill-list h5{
+    display: inline-block;
+    text-align: left !important;
+}
+.skill-list h5{
+  position: relative;
+}
+
+ .skill-list {
+  counter-reset: skill-counter; /* reset the counter */
+}
+
+.skill-list li {
+  position: relative;
+  margin-bottom: 40px; /* space between items */
+}
+
+.skill-list li::before {
+  content: counter(skill-counter);
+  counter-increment:skill-counter 1;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid #CEB987;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+.skill-list li h5::after {
+  content: "";
+  position: absolute;
+  top:25px;           
+  right:0%;          
+  width:130%;
+  height: 2px;
+  background: #CEB987;
+}
+ul{
+    list-style: none;
+}
